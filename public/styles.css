@@ -1,0 +1,130 @@
+body{
+    background-color: #454E57;
+    color:#C1C1C1;    
+    font-family: sans-serif;
+    box-sizing: border-box;
+  }
+a{
+    color:White;
+    text-decoration:none;
+}
+a:hover{
+    color:#ee2d48;
+}
+.student-information{    
+    width:85vw;
+    margin:15vw auto;
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 2vw;
+}
+
+ .student-information #gallery-images{   
+    margin: 1vw 10vw;
+}
+.student-information #gallery-images img{
+    transition-duration: 0.4s; 
+    margin: 0 1vw;
+    width: 20vw;
+    height: 20vw;
+    opacity:0.8;
+    border-radius: 50%;
+    border:5px solid #ee2d48;
+    transition: width 2s, height 2s, transform 2s;
+}
+.student-information #gallery-images img:hover{
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+    width: 300px;
+    height: 300px;
+   
+} 
+.gallery{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-column-gap: 2vw;
+    width:85vw;
+    margin:3vw auto;
+    position:relative;
+}
+.gallery #image{
+    transition-duration: 0.4s; 
+    margin: 0 2vw;
+    width: 20vw;
+    height: 20vw;
+    border:5px solid #ee2d48;
+}
+
+form{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-column-gap: 2vw;
+    width:70vw;
+    margin:3vw auto;
+  
+}
+form div{
+    position:relative;
+}
+form input{  
+    background-color: transparent;
+    outline: none;
+    width: 32vw;
+    margin-top:2vw;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #656C74 3px;
+    color: #eeeeee;
+    padding-top: 30px;      
+}
+
+form div label{
+    visibility: hidden;
+    position: absolute;
+    /* top: 0; */
+    left: 4px;
+    /* padding: 7px 0 0 13px; */
+    transition: all 200ms;    
+    color:white;
+    font-size:12px;
+    font-weight: bolder;
+}
+form input:not(:placeholder-shown) + label,
+input:focus + label {
+    top: 0;
+    margin-top: 7px; 
+   cursor: pointer;
+   visibility: visible;
+}
+button{
+    background-color: #008CBA; 
+    width:10vw;
+    margin-top:2vw;
+    border:none;
+}
+button[type='submit']{
+    background-color: #ee2d48; 
+    color: white;
+    width:15vw;
+    padding:1.5vw;    
+    text-align: center;
+    text-decoration: none;  
+    border:none;
+    cursor: pointer;
+}
+.fullname{
+    text-align: center;
+   text-decoration:none;  
+}
+.navigation{
+    display: grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    width:50vw;
+    margin:3vw auto;
+    border-bottom: 5px solid #ee2d48;
+}
+.navigation a{
+   justify-self: center;
+   margin-bottom:2vw;
+}

@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+        <link href="/styles.css" rel="stylesheet" type="text/css">
+  
+</head>
+<body>
+    <div class="navigation">
+        <a href="/add-student" class="link">Add student</a>
+        <a href="/students" class="link">students</a>
+        <a href="/api" class="link">Students API</a>
+    </div>   
+    <a href="/students">back</a>   
+    <div class="student-information">
+        <div id="gallery-images">
+            <img src='/images/<%= src %>' alt="logo" class="images" id="image">
+        </div>  
+        <div class="details">
+            <h3><span class="firstName"><%= firstName %></span> <span class="lastName"><%= lastName %></span></h3>
+            <p>Title:<%= title %></p>
+            <p>Nationality:<%= nationality %></p>
+            <p>Skills:</p>
+            <ul>
+                    <% skills.forEach(skill=>{ %>
+                    <li><%= skill %></li>
+                    <% });%>
+            </ul>
+            <p>WhySoftwareDeveloper: <%= whySoftwareDeveloper %></p>
+            <p>LongTermVision:<%= longTermVision %></p>
+            <p>MotivatesMe:<%= motivatesMe %></p>
+            <p>Quotation:<%= favoriteQuote %></p>
+            <p>Joined On:<%= joinedOn %></p>   
+        </div>
+    </div>
+    
+</body>
+</html>

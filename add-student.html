@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add Students</title>
+</head>
+<body>
+        <div class="navigation">
+                <a href="/add-student" class="link">Add student</a>
+                <a href="/students" class="link">students</a>
+                <a href="/api" class="link">Students API</a>
+        </div>
+    
+  <form action="/add-student" method="POST" class="add-student" enctype="multipart/form-data">
+        <div>
+        <input  type="text" name='firstName' placeholder="First Name " />
+        <label>First Name</label>
+        </div>
+        <div>
+            <input  type="text" name='lastName' placeholder="Last Name"/>
+            <label>Last Name</label>
+        </div>
+        <div>
+            <input  type="email" name='email' placeholder="Email"/>
+            <label>Email</label>
+        </div>
+        <div>
+            <input  type="text" name='title' placeholder="Title"/>
+            <label>Title</label>
+        </div>
+        <div>
+            <input  type="text" name='nationality' placeholder="Nationality"/>
+            <label>Nationality</label> 
+        </div>
+        <div>
+            <input  type="text" name='skills' placeholder="Skills"/>
+            <label>Skills</label>   
+        </div>
+        <div>
+            <input type='text' name='whySoftwareDeveloper' placeholder="WhySoftwareDeveloper"/>
+            <label>WhySoftwareDeveloper</label>
+        </div>
+        <div>
+            <input type='text' name='longTermVision' placeholder="LongTermVision"/>
+            <label>LongTermVision</label>
+        </div>
+        <div> 
+            <input type='text' name='motivatesMe' placeholder="What Motivates you"/>
+            <label>What Motivates you</label>
+        </div>
+        <div>
+            <input type='text' name='favoriteQuote' placeholder="Favorite Quotation"/>
+            <label>Favorite Quotation</label>
+        </div>
+        <div>
+            <input type='datetime' name='joinedOn' placeholder="Joined On"/>
+            <label>Joined On</label> 
+        </div>        
+        <input type="file" name="src" />
+        <button type='submit' value='upload'>Add Student</button>
+      
+  </form>  
+</body>
+</html>

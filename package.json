@@ -1,0 +1,20 @@
+{
+  "name": "exprs_studentgallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "engine":"8.11.1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-fileupload": "^0.4.0",
+    "nodemailer": "^4.6.7",
+    "nodemon": "^1.18.3"
+  }
+}

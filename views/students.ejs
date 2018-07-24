@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="/styles.css" rel="stylesheet" type="text/css">
+        <title>Students</title>
+    </head>
+    <body>
+            <div class="navigation">
+                <a href="/add-student" class="link">Add student</a>
+                <a href="/students" class="link">students</a>
+                <a href="/api" class="link">Students API</a>
+            </div>
+        <div class="gallery">                        
+                    <% students.map((student,id) => { %>                      
+                        <a href='students/<%= id %>'>
+                            <h3 class="fullname"><span class="firstName"><%= student.firstName %></span> <span class="lastName"><%= student.lastName %></span></h3>
+                            <img src='images/<%= student.src %>' alt="logo" class="images" id="image">
+                        </a>
+                    <% }); %>
+              
+        </div>
+    </body>
+</html>
